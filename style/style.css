@@ -1,0 +1,80 @@
+body {
+	background-color: rgb(9, 0, 26);
+}
+span,
+div {
+	color: white;
+}
+.container {
+	display: flex;
+	margin: auto;
+}
+.data {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.text {
+	display: flex;
+	border-radius: 10px 0 0 10px;
+	font-family: "Roboto", sans-serif;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 50px 100px 50px 50px;
+	background-color: rgb(21, 1, 54);
+	flex-basis: 50%;
+}
+.number {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.title {
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+.purple {
+	color: rgb(185, 5, 255);
+}
+.image {
+	position: relative;
+	max-width: 100%;
+	max-height: 100%;
+	flex-basis: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.image:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(95, 0, 150, 0.6);
+	z-index: 999;
+}
+img {
+	filter: saturate(purple);
+	border-radius: 0 10px 10px 0;
+	display: inline-block;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+.description {
+	letter-spacing: 0rem;
+}
+.text div {
+	margin-bottom: 20px;
+}
+.data span {
+	margin-right: 20px;
+}

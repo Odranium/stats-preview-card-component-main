@@ -1,0 +1,36 @@
+@media screen and (max-width: 480px) {
+	.container {
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	.data {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		justify-content: center;
+	}
+	.title {
+		font-size: 2rem;
+	}
+	.text {
+		justify-content: space-between;
+		padding: 50px 75px 50px 50px;
+	}
+	.text div {
+		margin-bottom: 20px;
+	}
+	.data span {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.container {
+		max-width: 1200px;
+
+		margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+		transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+	}
+}
